@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("View Did Load");
     }
     
     // Email
@@ -23,9 +24,16 @@ class ViewController: UIViewController {
 
     // Handle Create an Account
     @IBAction func _createAccount(_ sender: Any) {
+        print("Firing off the create account Segue");
     }
     // Handle Forgot password
     @IBAction func _forgotPassword(_ sender: Any) {
+        print("Firing off the forgot Account Segue");
+    }
+    @IBAction func Login(_ sender: Any) {
+        print("Logging the User In");
+        print("Email", email);
+        print("Password",password);
     }
 }
 

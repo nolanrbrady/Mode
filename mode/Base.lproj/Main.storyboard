@@ -64,6 +64,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDg-cy-GfG"/>
                                     <segue destination="to8-we-0Mo" kind="show" id="RdR-HY-GbV"/>
                                 </connections>
                             </button>
@@ -75,7 +76,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="_createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcZ-KW-dTd"/>
+                                    <action selector="_createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wY1-FC-ghd"/>
                                     <segue destination="6ha-PZ-T1A" kind="show" identifier="createAccount" id="XqZ-T2-rZb"/>
                                 </connections>
                             </button>
@@ -85,6 +86,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3p5-TX-uJB"/>
                     <connections>
+                        <outlet property="email" destination="0y5-u8-ha2" id="u2S-f8-iII"/>
                         <outlet property="password" destination="IED-t3-7qo" id="wGQ-I6-Laj"/>
                     </connections>
                 </viewController>
@@ -92,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="132.26600985221674"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="zOU-4q-qUE">
             <objects>
-                <viewController id="to8-we-0Mo" sceneMemberID="viewController">
+                <viewController title="Home" id="to8-we-0Mo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vTN-zp-YeL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +113,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ux8-MM-DpV"/>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3S-IS-LDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
